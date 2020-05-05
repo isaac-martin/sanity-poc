@@ -1,5 +1,6 @@
 import {format} from 'date-fns'
 import {icons} from '../../../web/src/components/iconArr'
+import DynamicData from '../../src/components/dynamicData'
 
 export default {
   name: 'post',
@@ -40,6 +41,14 @@ export default {
       options: {
         list: icons
       }
+    },
+    {
+      name: 'dynamicData',
+      type: 'string',
+      title: 'Dynamic Data',
+      description:
+        'Example of fetching data from an api - just using gihub for simplicity but could be split optimizely etc',
+      inputComponent: DynamicData
     },
     {
       name: 'excerpt',
