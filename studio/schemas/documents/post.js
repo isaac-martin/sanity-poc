@@ -1,4 +1,5 @@
 import {format} from 'date-fns'
+import {icons} from '../../../web/src/components/iconArr'
 
 export default {
   name: 'post',
@@ -31,6 +32,14 @@ export default {
       name: 'mainImage',
       type: 'mainImage',
       title: 'Main image'
+    },
+    {
+      name: 'icon',
+      type: 'string',
+      title: 'Icon',
+      options: {
+        list: icons
+      }
     },
     {
       name: 'excerpt',
